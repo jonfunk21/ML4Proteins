@@ -1,4 +1,4 @@
-# 00 Introduction to Artificial Neural Networks (ANNs)
+# 01 Introduction to Artificial Neural Networks (ANNs)
 Welcome to the exciting world of Artificial Neural Networks (ANNs)! This introductory module is designed to provide a foundational understanding of ANNs, their workings, and their capabilities in protein engineering. We'll explore the core concepts, delve into some fundamental mathematics, and visualize how these networks process information. We will cover the following topics:
 
 - Introduction to universal function approximators.
