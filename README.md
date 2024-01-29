@@ -42,12 +42,6 @@ Please, also install PyTorch using the following [link](https://pytorch.org/get-
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
 
-Also install tensorboard for visualization purposes:
-
-```
-conda install anaconda::tensorboard
-```
-
 ## Verifying the Installation
 After installation, you can verify that everything is set up correctly by checking the installed package versions. For example:
 
