@@ -1,5 +1,5 @@
 # 00 Introduction to Artificial Neural Networks (ANNs)
-Welcome to the exciting world of Artificial Neural Networks (ANNs)! This introductory module is designed to provide a foundational understanding of ANNs, their workings, and their incredible capabilities in protein engineering. We'll explore the core concepts, delve into some fundamental mathematics, and visualize how these networks process information. We will cover the following topics:
+Welcome to the exciting world of Artificial Neural Networks (ANNs)! This introductory module is designed to provide a foundational understanding of ANNs, their workings, and their capabilities in protein engineering. We'll explore the core concepts, delve into some fundamental mathematics, and visualize how these networks process information. We will cover the following topics:
 
 - Introduction to universal function approximators.
 - The Multi-Layer Perceptron.
@@ -10,7 +10,7 @@ Welcome to the exciting world of Artificial Neural Networks (ANNs)! This introdu
 - Training ANNs: Gradient descent, and backpropagation.
 
 ## The Universal Function Approximator
-In the world of biotechnology, you are accustomed to the concept of fitting models to data – whether it's in understanding gene expression patterns, predicting enzymatic activity, or modeling biological processes. Neural networks, at their core, are not fundamentally different. They are powerful tools for fitting complex, high-dimensional data. However, the way they achieve this might be new to you.
+In biotechnology, you are accustomed to the concept of fitting models to data – whether it's in understanding gene expression patterns, predicting enzymatic activity, or modeling biological processes. Neural networks, at their core, are not fundamentally different. They are powerful tools for fitting complex, high-dimensional data. However, the way they achieve this might be new to you.
 
 Imagine you performed a biochemical assay to quantify the activity of an enzyme library. Mathematically, you could express the data you collected as follows:
 - The set of sequences you collected will be called $\vec{x_i} \in \mathbf{X}$. Here $\vec{x_i}$ is a single seqeuence in you dataset and $\mathbf{X}$ is the set of all sequences you measured in your experiments.
@@ -18,7 +18,7 @@ Imagine you performed a biochemical assay to quantify the activity of an enzyme 
 
 A natural question to ask is how your protein sequence lead to the observed activity? We can approach this problem by first assuming, that there should be some logical reason that leads to the improved activities we observed in our experiments. In other words, we expect that there exists a rule or *function* connecting a protein sequence to the activity we observe. This can again be mathematically expressed as:
 
-- $f:\mathbb{X} \rightarrow \mathbb{Y}$, which is read as "There is a function $f$, which *maps* my set of sequenes $\mathbb{X}$ to a set of activities $\mathbb{Y}$. In this course you will learn how to find the function that maps your protein sequences to the data you observed using artificial neural networks.
+- $f:\mathbb{X} \rightarrow \mathbb{Y}$, which is read as "a function $f$, which *maps* my set of sequenes $\mathbb{X}$ to a set of activities $\mathbb{Y}$. In this course you will learn how to find the function that maps your protein sequences to the data you observed using artificial neural networks.
 
 ## The Multi-Layer Perceptron
 
@@ -38,7 +38,7 @@ $h_j=\phi(\vec{x})=\Sigma_{i=1}^n w_{ij} \dot x_i + b_j$
 
 Where $w_{ji}$ is the weight connecting the $i$-th input to the $j$-th neuron, and $b_j$ is the bias for the $j$-th neuron. The output of the entire hidden layer, then, is a vector $\vec{h} = [h_1, h_2, ..., h_m]$.
 
-This layering and interconnectivity allow neural networks to learn complex, non-linear relationships. Each layer captures different aspects of the data, building upon the previous layers’ outputs. In the context of protein engineering, you can think of each layer as analyzing different levels of complexity in the protein structure and function relationships, from primary sequences to higher-order interactions.
+This layering and interconnectivity allow neural networks to learn complex relationships. Each layer captures different aspects of the data, building upon the previous layers’ outputs. In the context of protein engineering, you can think of each layer as analyzing different levels of complexity in the protein structure and function relationships, from primary sequences to higher-order interactions.
 
 ### Introducing Non-Linearity in ANNs
 The true strength of neural networks in modeling complex biological phenomena lies in their ability to introduce non-linearity into the system. This is achieved through what we call activation functions. Let's denote an activation function by $\sigma$. It is applied to the output of each neuron, transforming the linear combination of inputs and weights into a non-linear output. This is crucial because most biological processes, including those in protein engineering, exhibit non-linear characteristics and cannot be accurately modeled with linear equations alone.
@@ -49,11 +49,11 @@ $y=\sigma(\Sigma_{i=1}^n w_i \dot x_i + b)$
 
 Common choices for $\sigma$ include functions like the Sigmoid ($\sigma(z) = \frac{1}{1 + e^{-z}}$), Hyperbolic Tangent (tanh), and Rectified Linear Unit (ReLU). Each of these functions adds a different type of non-linearity:
 
-Sigmoid: It maps the input into a range between 0 and 1, making it useful for models where we need to predict probabilities.
+**Sigmoid**: It maps the input into a range between 0 and 1, making it useful for models where we need to predict probabilities.
 
-tanh: Similar to the sigmoid but maps the input to a range between -1 and 1. It's useful when the model needs to handle negative values.
+**tanh**: Similar to the sigmoid but maps the input to a range between -1 and 1. It's useful when the model needs to handle negative values.
 
-ReLU: Defined as $\sigma(z) = max(0, z)$, it introduces non-linearity while maintaining the simplicity and efficiency of computation. ReLU is particularly popular in deep learning because it allows models to learn faster and perform better.
+**ReLU**: Defined as $\sigma(z) = max(0, z)$, it introduces non-linearity while maintaining the simplicity and efficiency of computation. ReLU is particularly popular in deep learning because it allows models to learn faster and perform better.
 
 By applying these non-linear functions, the network can create complex mappings from inputs to outputs, akin to fitting a multi-dimensional curve to data. This capability is what enables neural networks to capture the intricate and nuanced relationships present in protein sequence-activity data, vastly outperforming traditional linear models in such tasks.
 
