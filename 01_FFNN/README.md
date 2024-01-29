@@ -25,7 +25,7 @@ A natural question to ask is how your protein sequence lead to the observed acti
 ### Exploring the Basic Unit: A Single Neuron
 Let's begin with the fundamental building block of neural networks: the neuron. In its simplest form, a neuron in an ANN can be thought of as a computational equivalent to a linear regression model. Imagine a neuron as a function $f_\phi$ (read as: $f$ parameterized on $\phi$), which takes an input vector $\vec{x} = [x_1, x_2, ..., x_n]$ - each $x_i$ representing a different feature of your protein sequences, such as different amino acids. Each input $\vec{x_i}$ is associated with a weight $w_i$, signifying its importance, much like coefficients in a regression equation. Mathematically, the output of this neuron, $y$, can be expressed as:
 
-$y=\phi(\vec{x})=\sum_{i=1}^nw_i\dot x_i + b$
+$y=\phi(\vec{x})=\Sigma_{i=1}^nw_i\dot x_i + b$
 
 Here, $b$ is the bias term, an additional parameter in the neuron, akin to the intercept in linear regression, which allows you to adjust the output independently of the input. This linear combination of inputs and weights forms the basis of what the neuron 'learns' during the training process. As simple as this might seem, it’s a powerful concept, laying the groundwork for more complex structures in neural networks.
 
@@ -34,7 +34,7 @@ With the basic understanding of a single neuron, we can now explore the concept 
 
 Each neuron in a hidden layer receives input from all the neurons of the previous layer, adding depth to the processing capability of the network. If we consider a single hidden layer with $m$ neurons, and our input vector $\vec{x} = [x_1, x_2, ..., x_n]$, the output of the $j$-th neuron in this layer can be represented as:
 
-$h_j=\phi(\vec{x})=\sum_{i=1}^n w_{ij} \dot x_i + b_j$
+$h_j=\phi(\vec{x})=\Sigma_{i=1}^n w_{ij} \dot x_i + b_j$
 
 Where $w_{ji}$ is the weight connecting the $i$-th input to the $j$-th neuron, and $b_j$ is the bias for the $j$-th neuron. The output of the entire hidden layer, then, is a vector $\vec{h} = [h_1, h_2, ..., h_m]$.
 
@@ -45,7 +45,7 @@ The true strength of neural networks in modeling complex biological phenomena li
 
 Mathematically, the output of a neuron with a non-linear activation function can be represented as:
 
-$y=\sigma(\sum_{i=1}^n w_i \dot x_i + b)$
+$y=\sigma(\Sigma_{i=1}^n w_i \dot x_i + b)$
 
 Common choices for $\sigma$ include functions like the Sigmoid ($\sigma(z) = \frac{1}{1 + e^{-z}}$), Hyperbolic Tangent (tanh), and Rectified Linear Unit (ReLU). Each of these functions adds a different type of non-linearity:
 
