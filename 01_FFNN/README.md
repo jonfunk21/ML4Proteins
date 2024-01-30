@@ -2,12 +2,8 @@
 Welcome to the exciting world of Artificial Neural Networks (ANNs)! This introductory module is designed to provide a foundational understanding of ANNs, their workings, and their capabilities in protein engineering. We'll explore the core concepts, delve into some fundamental mathematics, and visualize how these networks process information. We will cover the following topics:
 
 - Introduction to universal function approximators.
-- The Multi-Layer Perceptron.
-    - A single neuron.
-    - Hidden layers.
-    - Multi-dimensional input data.
-    - Non-linearity in ANNs
-- Training ANNs: Gradient descent, and backpropagation.
+- The Multi-Layer Perceptrons.
+- Gradient based learning.
 
 ## The Universal Function Approximator
 In biotechnology, you are accustomed to the concept of fitting models to data – whether it's in understanding gene expression patterns, predicting enzymatic activity, or modeling biological processes. Neural networks, at their core, are not fundamentally different. They are powerful tools for fitting complex, high-dimensional data. However, the way they achieve this might be new to you.
