@@ -27,7 +27,7 @@ Let's begin with the fundamental building block of neural networks: the neuron. 
 
 $y=\phi(\vec{x})=\Sigma_{i=1}^nw_i\dot x_i + b$
 
-Here, $b$ is the bias term, an additional parameter in the neuron, akin to the intercept in linear regression, which allows you to adjust the output independently of the input. This linear combination of inputs and weights forms the basis of what the neuron 'learns' during the training process. As simple as this might seem, it’s a powerful concept, laying the groundwork for more complex structures in neural networks.
+Here, $b$ is the bias term, an additional parameter in the neuron, akin to the intercept in linear regression, which allows you to adjust the output independently of the input. This linear combination of inputs and weights forms the basis of what the neuron learns during the training process. As simple as this might seem, it’s a powerful concept, laying the groundwork for more complex structures in neural networks.
 
 ### Hidden layers
 With the basic understanding of a single neuron, we can now explore the concept of hidden layers in a neural network. Hidden layers are what transform a simple neuron into a more complex and capable neural network. Imagine stacking several neurons together to form a layer, and then stacking multiple such layers. This is the essence of a multi-layer perceptron.
@@ -57,7 +57,7 @@ Common choices for $\sigma$ include functions like the Sigmoid ($\sigma(z) = \fr
 
 By applying these non-linear functions, the network can create complex mappings from inputs to outputs, akin to fitting a multi-dimensional curve to data. This capability is what enables neural networks to capture the intricate and nuanced relationships present in protein sequence-activity data, vastly outperforming traditional linear models in such tasks.
 
-## Training ANNs: Gradient Descent and Backpropagation
+## Gradient-Based Learning
 Once the architecture of a neural network is set up with neurons, layers, and activation functions, the next crucial step is training the network to make accurate predictions. This is where gradient descent and backpropagation come into play. These concepts are fundamental in the learning process of ANNs, especially in the context of complex tasks like protein engineering.
 
 Gradient Descent: The Core of Learning
