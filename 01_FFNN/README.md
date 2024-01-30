@@ -16,6 +16,10 @@ A natural question to ask is how your protein sequence lead to the observed acti
 
 - $f:\mathbb{X} \rightarrow \mathbb{Y}$, which is read as "a function $f$, which *maps* my set of sequenes $\mathbb{X}$ to a set of activities $\mathbb{Y}$. In this course you will learn how to find the function that maps your protein sequences to the data you observed using artificial neural networks.
 
+| ![Project Image](./media/fig_1.png) | 
+|:--:| 
+| *Simple protein engineering example illustrating the fundamental ML workflow.* |
+
 ## The Multi-Layer Perceptron
 
 ### Exploring the Basic Unit: A Single Neuron
@@ -24,6 +28,14 @@ Let's begin with the fundamental building block of neural networks: the neuron. 
 $y=\phi(\vec{x})=\Sigma_{i=1}^nw_i\dot x_i + b$
 
 Here, $b$ is the bias term, an additional parameter in the neuron, akin to the intercept in linear regression, which allows you to adjust the output independently of the input. This linear combination of inputs and weights forms the basis of what the neuron learns during the training process. As simple as this might seem, it’s a powerful concept, laying the groundwork for more complex structures in neural networks.
+
+| ![Project Image](./media/fig_3.png) | 
+|:--:| 
+| *Example of how a single neuron with linear activation functions can solve a simple 2-dimensional regression problem.* |
+
+| ![Project Image](./media/fig_2.png) | 
+|:--:| 
+| *Simple linear models such as the linear single neuron fail at non-linear tasks.* |
 
 ### Hidden layers
 With the basic understanding of a single neuron, we can now explore the concept of hidden layers in a neural network. Hidden layers are what transform a simple neuron into a more complex and capable neural network. Imagine stacking several neurons together to form a layer, and then stacking multiple such layers. This is the essence of a multi-layer perceptron.
