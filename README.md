@@ -35,6 +35,11 @@ With your environment activated, install the necessary packages for the course. 
 conda install numpy pandas scikit-learn matplotlib seaborn
 ```
 
+## Installing conda
+```
+conda install conda-forge::jupyterlab
+```
+
 ### PyTorch
 Please, also install PyTorch using the following [link](https://pytorch.org/get-started/locally/) and insturctions. Once you entered your system details the install command might look something like this:
 
