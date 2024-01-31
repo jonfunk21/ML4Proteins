@@ -35,7 +35,7 @@ With your environment activated, install the necessary packages for the course. 
 conda install numpy pandas scikit-learn matplotlib seaborn
 ```
 
-## Installing conda
+## Installing Jupyter Lab
 ```
 conda install conda-forge::jupyterlab
 ```
