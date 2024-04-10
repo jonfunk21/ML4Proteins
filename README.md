@@ -10,7 +10,7 @@ Installing Conda or Miniforge:
 ### Conda
 Visit the Anaconda distribution page and download the installer for your operating system. Follow the installation instructions provided on the website.
 ### Miniforge 
-Visit the Miniforge GitHub page and download the installer for your operating system. Follow the installation instructions provided in the repository.
+Visit the [Miniforge GitHub page](https://github.com/conda-forge/miniforge) and download the installer for your operating system. Follow the installation instructions provided in the repository.
 
 ### Creating a New Environment
 Open your terminal (or Anaconda Prompt if you're on Windows) and create a new Conda environment specifically for this course by running:
