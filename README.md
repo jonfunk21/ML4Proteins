@@ -1,5 +1,7 @@
 # ML4Proteins
 Welcome to **ML4Proteins**! Here you will learn about the concepts and methods of machine learning for protein engineering using [ProteusAI](https://github.com/jonfunk21/ProteusAI).
+The course is primarily aimed to newcomers to the field and mostly geared to biotechnology, and bioinformatic students who had some contact with machine learning and Python before.
+If you are new to both machine learning and Python, then this course might be challenging at times.
 The course material is closely linked to our research and will bring introduce you to bleeding edge research questions we are thinking about on a daily basis. This is our first course 
 on the subject matter and we hope to make the course as useful as possible. We want the course to be as useful as possible, so please let us know if we can make improvements!
 
