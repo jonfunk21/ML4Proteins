@@ -24,3 +24,10 @@ This directory also includes a **bonus lecture on Feed-Forward Neural Networks (
 ---
 
 Dive in and enjoy learning how machine learning can revolutionize protein design and engineering!
+
+## If you want to learn stuff from the basics start here:
+
+[Mathematics for machine learning book (free)](https://mml-book.github.io/)
+[Read the PyTorch docs (if you're into it)](https://docs.pytorch.org/tutorials/beginner/basics/intro.html)
+[Read blog posts like Lil'Log](https://lilianweng.github.io/)
+[Re-implement tutorials, for example](https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html)
